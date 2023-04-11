@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: black;
+}
+
+.container {
+    max-width: 375px;
+}
+
+/* ==========================
+         HEADER
+============================ */
+
+header {
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    text-align: center;
+    color: white;
+    padding: 1em;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-bottom: none;
+}
+
+.result-div {
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 35%;
+    height: 30%;
+    padding: 1em;
+    margin-bottom: 1.2em;
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.title {
+    font-size: 1rem;
+    margin: 1em 0;
+    opacity: 0.7;
+}
+
+.big-num {
+    opacity: 1;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.small-num {
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
+.great {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.result-statement {
+    margin-bottom: 2em;
+    opacity: 0.7;
+}
+
+/* ==========================
+          MAIN AREA 
+=============================*/
+
+main {
+    padding: 1em;
+}
+
+.stat {
+    display: flex;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+}
+
+.icon {
+    margin-right: 0.8em;
+}
+.category {
+    margin-right: auto;
+}
+
+.summary-header {
+    margin: 0.5em 0;
+}
+
+button {
+    background: hsl(224, 30%, 27%);
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 1em;
+    border-radius: 30px;
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+button:hover,
+button:focus {
+    transform: scale(1.05);
+}
+
+button:active {
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+/* ============================
+         MEDIA QUERIES
+============================== */
+
+@media (min-width: 400px) {
+    .container {
+        display: flex;
+        max-width: 600px;
+    }
+
+    header {
+        width: 50%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        padding: 1.5em;
+    }
+
+    main{
+        width: 50%;
+    }
+
+    .result-div {
+        width: 53%;
+        height: 35%;
+        margin-bottom: 2em;
+    }
+
+    .summary-header {
+        margin-top: 0.3em;
+        margin-bottom: 1em;
+    }
+
+    button {
+        margin-top: 1em;
+    }
+
+    .title {
+        font-size: 1.2rem;
+        margin-bottom: 1.3em;
+    }
+
+    .result-statement {
+        padding: 0 1em;
+    }
+}
